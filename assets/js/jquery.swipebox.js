@@ -7,7 +7,7 @@
 @license      MIT License
 
 ----------------------------------------------------------------------------------------------*/
-
+const jQuery = require('jquery');
 ;(function (window, document, $, undefined) {
 	
 	$.swipebox = function(elem, options) {

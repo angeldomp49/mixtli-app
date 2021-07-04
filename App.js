@@ -9,6 +9,13 @@ import './assets/css/animations.css';
 import './assets/css/reset.css';
 import './assets/css/swipebox.css';
 
+import $ from 'jquery';
+import './assets/js/email';
+import './assets/js/framework7';
+import './assets/js/jquery.fitvids';
+import './assets/js/jquery.swipebox';
+import './assets/js/my-app';
+
 export default function App() {
   return (
     <View style={styles.container}>
