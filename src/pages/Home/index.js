@@ -1,4 +1,4 @@
-import {React} from 'react';
+import React from 'react';
 
 import MainDefault from '../../containers/MainDefault';
 import NavPages from '../../components/navs/NavPages';
