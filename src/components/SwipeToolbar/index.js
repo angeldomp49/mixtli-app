@@ -1,3 +1,4 @@
+import {React} from 'react';
 
 const SwipeToolbar = () => {
     return(
@@ -42,3 +43,5 @@ const SwipeToolbar = () => {
         </div>
     );
 };
+
+export default SwipeToolbar;

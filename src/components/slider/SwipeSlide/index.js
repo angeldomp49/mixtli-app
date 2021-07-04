@@ -1,3 +1,4 @@
+import {React} from 'react';
 
 const SwipeSlide = () =>{
     return(
@@ -15,3 +16,5 @@ const SwipeSlide = () =>{
         </div>
     );
 };
+
+export default SwipeSlide;

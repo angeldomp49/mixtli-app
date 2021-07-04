@@ -1,5 +1,6 @@
+import {React} from 'react';
 
-const RegisterPopup = () => {
+const Register = () => {
     return (
         <div class="popup popup-signup">
             <div class="content-block">
@@ -25,3 +26,5 @@ const RegisterPopup = () => {
         </div>
     );
 };
+
+export default Register;

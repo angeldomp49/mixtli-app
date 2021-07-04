@@ -1,8 +1,7 @@
+import {React} from 'react';
 
 const MainDefault = ({ children }) => {
     return (
-        <html>
-            <Head />
             <body id="mobile_wrap">
                 <div class="statusbar-overlay"></div>
                 <div class="panel-overlay"></div>
@@ -20,6 +19,7 @@ const MainDefault = ({ children }) => {
                 <ForgotPasswordPopup />
                 <SocialPopup />
             </body>
-        </html>
     );
 };
+
+export default MainDefault;

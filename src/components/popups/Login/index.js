@@ -1,5 +1,6 @@
+import {React} from 'react';
 
-const LoginPopup = () => {
+const Login = () => {
     return(
         <div class="popup popup-login">
             <div class="content-block">
@@ -25,3 +26,5 @@ const LoginPopup = () => {
         </div>
     );
 };
+
+export default Login;

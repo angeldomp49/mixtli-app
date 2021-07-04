@@ -1,6 +1,6 @@
+import {React} from 'react';
 
-
-const panelLeft = () => {
+const PanelLeft = () => {
     return(
         <div className="panel panel-left panel-reveal">
             <div className="view view-subnav">
@@ -75,3 +75,5 @@ const panelLeft = () => {
         </div>
     );
 };
+
+export default PanelLeft;

@@ -1,5 +1,6 @@
+import {React} from 'react';
 
-const panelRight = () => {
+const PanelRight = () => {
     return(
         <div className="panel panel-right panel-reveal">
             <div className="user_login_info">
@@ -30,3 +31,5 @@ const panelRight = () => {
         </div>
     );
 };
+
+export default PanelRight

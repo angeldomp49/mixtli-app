@@ -1,6 +1,6 @@
+import {React} from 'react';
 
-
-const navPages = () =>{
+const NavPages = () =>{
     return(
         <div className="navbarpages">
             <div className="navbar_left">
@@ -21,3 +21,5 @@ const navPages = () =>{
         </div>
     );
 };
+
+export default NavPages;

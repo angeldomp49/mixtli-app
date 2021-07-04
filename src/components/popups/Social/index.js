@@ -1,4 +1,5 @@
 
+import {React} from 'react';
 
 const Social = () => {
     return (
@@ -26,3 +27,5 @@ const Social = () => {
         </div>
     );
 };
+
+export default Social;

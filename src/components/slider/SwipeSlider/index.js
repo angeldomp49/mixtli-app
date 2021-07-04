@@ -1,5 +1,6 @@
+import {React} from 'react';
 
-const SwipeContainer = () => {
+const SwipeSlider = () => {
 
     return(
         <div class="swiper-container slidertoolbar swiper-init" data-effect="slide" data-parallax="true"
@@ -51,3 +52,5 @@ const SwipeContainer = () => {
         </div>
     );
 };
+
+export default SwipeSlider;

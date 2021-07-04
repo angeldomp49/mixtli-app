@@ -1,5 +1,6 @@
+import {React} from 'react';
 
-const ForgotPasswordPopup = () => {
+const ForgotPassword = () => {
     return (
         <div class="popup popup-forgot">
             <div class="content-block">
@@ -20,3 +21,5 @@ const ForgotPasswordPopup = () => {
         </div>
     );
 };
+
+export default ForgotPassword;
