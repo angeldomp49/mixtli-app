@@ -8,8 +8,8 @@ import SwipeToolbar from '../../components/SwipeToolbar';
 export const Home = () => {
     return (
         <MainDefault>
-            <div data-page="index" class="page homepage">
-                <div class="page-content">
+            <div data-page="index" className="page homepage">
+                <div className="page-content">
                     <NavPages />
                     <SwipeSlider />
                     <SwipeToolbar />

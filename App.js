@@ -4,6 +4,11 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import Home from './src/pages/Home';
 
+import './assets/css/animations.css';
+// import './assets/css/framework7.css';
+import './assets/css/reset.css';
+import './assets/css/swipebox.css';
+
 export default function App() {
   return (
     <View style={styles.container}>
