@@ -7,7 +7,7 @@ export const ForgotPassword = () => {
                 <h4>FORGOT PASSWORD</h4>
                 <div className="loginform">
                     <form id="ForgotForm" method="post">
-                        <input type="text" name="Email" value="" className="form_input required" placeholder="email" />
+                        <input type="text" name="Email" className="form_input required" placeholder="email" />
                         <input type="submit" name="submit" className="form_submit" id="submitforgot" value="RESEND PASSWORD" />
                     </form>
                     <div className="signup_bottom">

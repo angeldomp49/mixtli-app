@@ -7,9 +7,9 @@ export const Register = () => {
                 <h4>REGISTER</h4>
                 <div className="loginform">
                     <form id="RegisterForm" method="post">
-                        <input type="text" name="Username" value="" className="form_input required" placeholder="Username" />
-                        <input type="text" name="Email" value="" className="form_input required" placeholder="Email" />
-                        <input type="password" name="Password" value="" className="form_input required"
+                        <input type="text" name="Username" className="form_input required" placeholder="Username" />
+                        <input type="text" name="Email" className="form_input required" placeholder="Email" />
+                        <input type="password" name="Password" className="form_input required"
                             placeholder="Password" />
                         <input type="submit" name="submit" className="form_submit" id="submitregister" value="SIGN UP" />
                     </form>

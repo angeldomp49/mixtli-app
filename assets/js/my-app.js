@@ -21,15 +21,15 @@ var $$ = Dom7;
 // Add main View
 
 
-// $(document).ready(() => {
-// 	var mainView = myApp.views.create('.view-main', {
-// 		// Enable dynamic Navbar
-// 		dynamicNavbar: false,
-// 	});
-// 	subnaview = myApp.views.create('.view-subnav');
-// });
+$(() => {
+	var mainView = myApp.views.create('.view-main', {
+		// Enable dynamic Navbar
+		dynamicNavbar: false,
+	});
+	var subnaview = myApp.views.create('.view-subnav');
+});
 
-$(document).ready(function() {
+$(function() {
 		$("#RegisterForm").validate();
 		$("#LoginForm").validate();
 		$("#ForgotForm").validate();
@@ -52,15 +52,15 @@ $$(document).on('pageInit', function (e) {
 
 	
 })
-myApp.onPageInit('music', function (page) {
+myApp.on('pageInit','music', function (page) {
 		  audiojs.events.ready(function() {
 			var as = audiojs.createAll();
 		  });
 })
-myApp.onPageInit('videos', function (page) {
+myApp.on('pageInit','videos', function (page) {
 		  $(".videocontainer").fitVids();
 })
-myApp.onPageInit('contact', function (page) {
+myApp.on('pageInit','contact', function (page) {
 		$("#ContactForm").validate({
 		submitHandler: function(form) {
 		ajaxContact(form);
@@ -68,7 +68,7 @@ myApp.onPageInit('contact', function (page) {
 		}
 		});	
 })
-myApp.onPageInit('form', function (page) {
+myApp.on('pageInit','form', function (page) {
     $("#CustomForm").validate({
         rules: {         
             selectoptions: {
@@ -85,7 +85,7 @@ myApp.onPageInit('form', function (page) {
 
 		
 })
-myApp.onPageInit('blog', function (page) {
+myApp.on('pageInit','blog', function (page) {
  
 		$(".posts li").hide();	
 		size_li = $(".posts li").size();
@@ -102,7 +102,7 @@ myApp.onPageInit('blog', function (page) {
 
 })
 
-myApp.onPageInit('shop', function (page) {
+myApp.on('pageInit','shop', function (page) {
 			
 		$('.qntyplusshop').click(function(e){
 									  
@@ -128,7 +128,7 @@ myApp.onPageInit('shop', function (page) {
 		});	
   
 })
-myApp.onPageInit('shopitem', function (page) {
+myApp.on('pageInit','shopitem', function (page) {
 		$(".swipebox").swipebox();	
 		$('.qntyplusshop').click(function(e){
 									  
@@ -154,7 +154,7 @@ myApp.onPageInit('shopitem', function (page) {
 		});	
   
 })
-myApp.onPageInit('cart', function (page) {
+myApp.on('pageInit','cart', function (page) {
 			
     $('.item_delete').click(function(e){
         e.preventDefault();
@@ -163,7 +163,7 @@ myApp.onPageInit('cart', function (page) {
     });
   
 })
-myApp.onPageInit('photos', function (page) {
+myApp.on('pageInit','photos', function (page) {
 	$(".swipebox").swipebox();
 	$("a.switcher").bind("click", function(e){
 		e.preventDefault();
@@ -238,7 +238,7 @@ myApp.onPageInit('photos', function (page) {
 	});	
 })
 
-myApp.onPageInit('chat', function (page) {
+myApp.on('pageInit','chat', function (page) {
 // Conversation flag
 var conversationStarted = false;
  

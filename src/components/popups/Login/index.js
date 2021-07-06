@@ -7,12 +7,12 @@ export const Login = () => {
                 <h4>LOGIN</h4>
                 <div className="loginform">
                     <form id="LoginForm" method="post">
-                        <input type="text" name="Username" value="" className="form_input required" placeholder="username" />
-                        <input type="password" name="Password" value="" className="form_input required"
+                        <input type="text" name="Username" className="form_input required" placeholder="username" />
+                        <input type="password" name="Password" className="form_input required"
                             placeholder="password" />
                         <div className="forgot_pass"><a href="#" data-popup=".popup-forgot" className="open-popup">Forgot
                                 Password?</a></div>
-                        <input type="submit" name="submit" className="form_submit" id="submitlogin" value="SIGN IN" />
+                        <button type="submit" name="submit" className="form_submit" id="submitlogin">SIGN IN</button>
                     </form>
                     <div className="signup_bottom">
                         <p>Don't have an account?</p>

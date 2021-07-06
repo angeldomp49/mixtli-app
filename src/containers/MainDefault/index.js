@@ -9,7 +9,7 @@ import { Social as SocialPopup } from '../../components/popups/Social';
 
 const MainDefault = ({ children }) => {
     return (
-        <body id="mobile_wrap">
+        <div id="mobile_wrap">
             <div className="statusbar-overlay"></div>
             <div className="panel-overlay"></div>
             <PanelLeft />
@@ -25,7 +25,7 @@ const MainDefault = ({ children }) => {
             <RegisterPopup />
             <ForgotPasswordPopup />
             <SocialPopup />
-        </body>
+        </div>
     );
 };
 

@@ -4,8 +4,8 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import Home from './src/pages/Home';
 
+import './node_modules/framework7/framework7-bundle.css';
 import './assets/css/animations.css';
-// import './assets/css/framework7.css';
 import './assets/css/reset.css';
 import './assets/css/swipebox.css';
 
