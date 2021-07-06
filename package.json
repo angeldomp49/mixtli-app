@@ -8,8 +8,10 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "dom7": "^3.0.0",
     "expo": "~41.0.1",
     "expo-status-bar": "~1.0.4",
+    "framework7": "^6.0.22",
     "jquery": "^3.6.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",

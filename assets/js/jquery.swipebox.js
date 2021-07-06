@@ -7,7 +7,7 @@
 @license      MIT License
 
 ----------------------------------------------------------------------------------------------*/
-const jQuery = require('jquery');
+import jQuery from 'jquery';
 ;(function (window, document, $, undefined) {
 	
 	$.swipebox = function(elem, options) {

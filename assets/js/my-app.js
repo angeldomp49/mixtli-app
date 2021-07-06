@@ -1,4 +1,9 @@
 // Initialize your app
+import Framework7 from "framework7";
+import Dom7 from "dom7";
+import $ from 'jquery';
+import './jquery.validate.min.js';
+
 var myApp = new Framework7({
     animateNavBackIcon: true,
     // Enable templates auto precompilation
@@ -14,12 +19,15 @@ var myApp = new Framework7({
 var $$ = Dom7;
 
 // Add main View
-var mainView = myApp.addView('.view-main', {
-    // Enable dynamic Navbar
-    dynamicNavbar: false,
-});
-var subnaview = myApp.addView('.view-subnav');
 
+
+// $(document).ready(() => {
+// 	var mainView = myApp.views.create('.view-main', {
+// 		// Enable dynamic Navbar
+// 		dynamicNavbar: false,
+// 	});
+// 	subnaview = myApp.views.create('.view-subnav');
+// });
 
 $(document).ready(function() {
 		$("#RegisterForm").validate();
