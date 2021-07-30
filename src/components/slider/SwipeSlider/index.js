@@ -1,5 +1,9 @@
 import React from 'react';
 
+import slide1 from '../../../../assets/images/slide1.jpg';
+import slide2 from '../../../../assets/images/slide2.jpg';
+import slide3 from '../../../../assets/images/slide3.jpg';
+
 const SwipeSlider = () => {
 
     return(
@@ -8,7 +12,7 @@ const SwipeSlider = () => {
             data-prev-button=".swiper-button-prev">
             <div className="swiper-wrapper">
 
-                <div className="swiper-slide" style={{backgroundImage:'url(images/slide1.jpg)'}}>
+                <div className="swiper-slide" style={{backgroundImage:'url('+slide1+')'}}>
                     <div className="slider_trans">
                         <div className="slider-caption">
                             <span className="subtitle" data-swiper-parallax="-60%">CREATIVE SOLUTION</span>
@@ -20,7 +24,7 @@ const SwipeSlider = () => {
                         </div>
                     </div>
                 </div>
-                <div className="swiper-slide" style={{backgroundImage:'url(images/slide2.jpg)'}}>
+                <div className="swiper-slide" style={{backgroundImage:'url('+slide2+')'}}>
                     <div className="slider_trans">
                         <div className="slider-caption">
                             <span className="subtitle" data-swiper-parallax="-60%">MULTIPURPOSE
@@ -33,7 +37,7 @@ const SwipeSlider = () => {
                         </div>
                     </div>
                 </div>
-                <div className="swiper-slide" style={{backgroundImage:'url(images/slide3.jpg)'}}>
+                <div className="swiper-slide" style={{backgroundImage:'url('+slide3+')'}}>
                     <div className="slider_trans">
                         <div className="slider-caption">
                             <span className="subtitle" data-swiper-parallax="-60%">WEB AND NATIVE</span>

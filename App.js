@@ -8,6 +8,7 @@ import './node_modules/framework7/framework7-bundle.css';
 import './assets/css/animations.css';
 import './assets/css/reset.css';
 import './assets/css/swipebox.css';
+import './assets/css/style.css';
 
 import './assets/js/email';
 import './assets/js/jquery.fitvids';
@@ -15,9 +16,13 @@ import './assets/js/jquery.swipebox';
 import './assets/js/my-app';
 
 export default function App() {
+  // return (
+  //   <View style={styles.container}>
+  //     <Home  />
+  //   </View>
+  // );
   return (
-    <View style={styles.container}>
-      <Home  />
+    <View>
     </View>
   );
 }
