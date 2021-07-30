@@ -1,7 +1,2 @@
-<div data-page="index" class="page homepage">
-                <div class="page-content">
-                    <NavPages />
-                    <SwipeSlider />
-                    <SwipeToolbar />
-                </div>
-            </div>
+Il nous faut de creer des fichiers externes pour stocker les styles
+Donc, remplacer les composant react avec react native.

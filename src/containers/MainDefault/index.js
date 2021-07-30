@@ -1,4 +1,5 @@
 import React from 'react';
+import {View} from 'react-native';
 
 import PanelLeft from '../../components/panels/PanelLeft';
 import PanelRight from '../../components/panels/PanelRight';
@@ -9,7 +10,7 @@ import { Social as SocialPopup } from '../../components/popups/Social';
 
 const MainDefault = ({ children }) => {
     return (
-        <div id="mobile_wrap">
+        <View style={} id="mobile_wrap">
             <div className="statusbar-overlay"></div>
             <div className="panel-overlay"></div>
             <PanelLeft />
@@ -25,8 +26,10 @@ const MainDefault = ({ children }) => {
             <RegisterPopup />
             <ForgotPasswordPopup />
             <SocialPopup />
-        </div>
+        </View>
     );
 };
+
+const styles = StyleSheet.create();
 
 export default MainDefault;
