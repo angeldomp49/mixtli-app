@@ -30,6 +30,5 @@ const MainDefault = ({ children }) => {
     );
 };
 
-const styles = StyleSheet.create();
 
 export default MainDefault;
