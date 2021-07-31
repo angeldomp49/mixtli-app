@@ -1,5 +1,5 @@
 import React from 'react';
-import {View} from 'react-native';
+import {View,ScrollView} from 'react-native';
 
 import PanelLeft from '../../components/panels/PanelLeft';
 import PanelRight from '../../components/panels/PanelRight';
@@ -10,18 +10,18 @@ import { Social as SocialPopup } from '../../components/popups/Social';
 
 const MainDefault = ({ children }) => {
     return (
-        <View style={} id="mobile_wrap">
-            <div className="statusbar-overlay"></div>
-            <div className="panel-overlay"></div>
+        <View id="mobile_wrap">
+            <ScrollView className="statusbar-overlay"></ScrollView>
+            <ScrollView className="panel-overlay"></ScrollView>
             <PanelLeft />
             <PanelRight />
-            <div className="views">
-                <div className="view view-main">
-                    <div className="pages">
+            <ScrollView className="views">
+                <ScrollView className="view view-main">
+                    <ScrollView className="pages">
                         {children}
-                    </div>
-                </div>
-            </div>
+                    </ScrollView>
+                </ScrollView>
+            </ScrollView>
             <LoginPopup />
             <RegisterPopup />
             <ForgotPasswordPopup />
