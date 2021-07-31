@@ -1,13 +1,15 @@
 import React from 'react';
 import {ScrollView,Button} from 'react-native';
 import menuWhite from './../../../../assets/images/icons/white/menu.png';
+import userWhite from './../../../../assets/images/icons/white/user.png';
+import cartWhite from './../../../../assets/images/icons/white/cart.png';
 
-const NavPages = () =>{
+const NavPages = ({navigation}) =>{
     return(
         <ScrollView className="navbarpages">
             <ScrollView className="navbar_left">
                 <ScrollView className="logo_text">
-                    <Button href="index.html">BLIX</Button>
+                    <Button onPress={()=>{navigation.navigate('home')}}>BLIX</Button>
                 </ScrollView>
             </ScrollView>
             <ScrollView className="navbar_right navbar_right_menu">
@@ -18,13 +20,13 @@ const NavPages = () =>{
             </ScrollView>
             <ScrollView className="navbar_right">
                 <Button href="#" data-panel="right" className="open-panel">
-                    <Image source="images/icons/white/user.png"
+                    <Image source={userWhite}
                         alt="" title="" />
                 </Button>
             </ScrollView>
             <ScrollView className="navbar_right">
-                <Button href="cart.html" data-view=".view-main">
-                    <Image source="images/icons/white/cart.png" alt=""
+                <Button onPress={()=>{navigation.navigate('home')}} data-view=".view-main">
+                    <Image source={cartWhite} alt=""
                         title="" />
                     <span>3</span>
                 </Button>

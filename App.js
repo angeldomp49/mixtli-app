@@ -4,8 +4,9 @@ import {createStackNavigator} from '@react-navigation/stack';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Home from './src/pages/Home';
 
+import Home from './src/pages/Home';
+import Welcome from './src/pages/Welcome';
 
 const Stack = createStackNavigator();
 
@@ -14,8 +15,8 @@ const RootStack = () =>{
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="Home"
-          component={Home}/>
+          name="Welcome"
+          component={Welcome}/>
 
       </Stack.Navigator>
     </NavigationContainer>
