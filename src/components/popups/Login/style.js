@@ -1,18 +1,16 @@
 import {StyleSheet} from 'react-native';
+import {constants, classes} from './../../../../assets/css/global';
 
 export const styles = StyleSheet.create({
-    container:{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
     title1:{
         fontSize: '2em',
-        textAlign: 'center',
         margin: '1em auto',
         fontWeight: 600,
         fontFamily: 'sans-serif'
-    }
+    },
+    box:{
+        margin: '2em'
+    },
 });
 
 export default styles;

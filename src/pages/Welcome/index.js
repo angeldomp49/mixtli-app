@@ -7,10 +7,6 @@ import Login from './../../components/popups/Login';
 export const Welcome = () => {
     return(
         <View style={styles.container}>
-            <Button title='Acceder'>
-            </Button>
-            <Button title='Registrarse'>
-            </Button>
             <Login/>
         </View>
     );

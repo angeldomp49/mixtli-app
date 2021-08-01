@@ -1,16 +1,17 @@
 import React from 'react';
 import styles from './style.js';
+import {classes} from './../../../../assets/css/global';
 import {View,Text} from 'react-native';
 
 export const Login = () => {
     return(
-        <View style={styles.container} className="popup popup-login">
-            <View className="content-block">
-                <Text>LOGIN</Text>
+        <View style={[classes.dFlex, classes.justifyContentCenter, classes.alignCenter, classes.h100]} className="popup popup-login">
+            <View style={styles.box} className="content-block">
+                <Text style={[classes.textCenter,styles.title1]}>LOGIN</Text>
                 <View className="loginform">
-                    <form id="LoginForm" method="post">
-                        <input type="text" name="Username" className="form_input required" placeholder="username" />
-                        <input type="password" name="Password" className="form_input required"
+                    <form style={[classes.w100]} id="LoginForm" method="post">
+                        <input style={[classes.w100]} type="text" name="Username" className="form_input required" placeholder="username" />
+                        <input style={[classes.w100]} type="password" name="Password" className="form_input required"
                             placeholder="password" />
                         <View className="forgot_pass"><a href="#" data-popup=".popup-forgot" className="open-popup">Forgot
                                 Password?</a></View>

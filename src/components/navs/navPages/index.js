@@ -9,7 +9,7 @@ const NavPages = ({navigation}) =>{
         <ScrollView className="navbarpages">
             <ScrollView className="navbar_left">
                 <ScrollView className="logo_text">
-                    <Button onPress={()=>{navigation.navigate('home')}}>BLIX</Button>
+                    <Button onPress={()=>{navigation.navigate('home')}} title='BLIX'/>
                 </ScrollView>
             </ScrollView>
             <ScrollView className="navbar_right navbar_right_menu">
