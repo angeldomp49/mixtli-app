@@ -10,3 +10,24 @@ base de datos y de la autenticación.
 
 La aplicación va a usar "roles-permisos" para permitir la asignación dinámica de acciones por parte de los usuarios
 dependiendo de sus respectivos roles.
+
+Lista de pantallas:
+
+iniciar sesión
+registro
+inicio
+recuperar contraseña
+lista de peliculas
+detalles de la pelicula
+lista de categorías
+detalles de la cuenta
+editar información de la cuenta
+historial
+subir pelicula
+editar pelicula
+
+La aplicación se divide en: 
+
+php para la autenticación y base de datos en el back-end
+javascript para la UI y sistema de front-end
+java para el reproductor de peliculas
