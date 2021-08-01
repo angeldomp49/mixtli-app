@@ -18,12 +18,18 @@ export const Register = () => {
                         <TextInput style={[classes.w100, classes.borderSimple, classes.p1, classes.mx1]} type="text" name="email" className="form_input required" placeholder="email" />
                         <TextInput style={[classes.w100, classes.borderSimple, classes.p1, classes.mx1]} secureTextEntry={true}  type="password" name="Password" className="form_input required"
                             placeholder="password" />
-                        <Button type="submit" name="submit" className="form_submit" id="submitlogin" title='SIGN IN' />
+                        <View style={classes.mt2}>
+                            <Button type="submit" name="submit" className="form_submit" id="submitlogin" title='SIGN IN' />
+                        </View>
                     </View>
-                    <Text style={[classes.mx1, classes.textCenter]}>- OR REGISTER WITH A SOCIAL ACCOUNT -</Text>
+                    <Text style={[classes.mt4, classes.textCenter]}>- OR REGISTER WITH A SOCIAL ACCOUNT -</Text>
                     <View className="signup_social">
-                        <Button type="submit" name="submit" className="form_submit" id="submitlogin" title='FACEBOOK' />
-                        <Button type="submit" name="submit" className="form_submit" id="submitlogin" title='TWITTER' />
+                        <View style={[classes.mb1]} >
+                            <Button color='#38579a' type="submit" name="submit" className="form_submit" id="submitlogin" title='FACEBOOK' />
+                        </View>
+                        <View style={[classes.mx1]} >
+                            <Button color='#0cacea' type="submit" name="submit" className="form_submit" id="submitlogin" title='TWITTER' />
+                        </View>
                     </View>
                 </View>
             </View>
