@@ -8,9 +8,12 @@ export const styles = StyleSheet.create({
         fontWeight: 600,
         fontFamily: 'sans-serif'
     },
-    box:{
-        margin: '2em'
+    forgotPassword:{
+        color: constants.black
     },
+    submit:{
+        backgroundColor: constants.transparent
+    }
 });
 
 export default styles;
