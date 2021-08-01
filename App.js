@@ -5,8 +5,8 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import Home from './src/pages/Home';
-import Welcome from './src/pages/Welcome';
+import Login from './src/components/popups/Login';
+import Register from './src/components/popups/Register';
 
 const Stack = createStackNavigator();
 
@@ -15,9 +15,11 @@ const RootStack = () =>{
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="Welcome"
-          component={Welcome}/>
-
+          name="Login"
+          component={Login}/>
+        <Stack.Screen
+          name="Register"
+          component={Register}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
