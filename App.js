@@ -4,6 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Provider } from 'react-redux';
 
 import Home from './src/pages/Home';
 import Welcome from './src/pages/Welcome';
@@ -12,14 +13,17 @@ const Stack = createStackNavigator();
 
 const RootStack = () =>{
   return(
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Welcome"
-          component={Welcome}/>
+    <Provider store={}>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen
+            name="Welcome"
+            component={Welcome}/>
 
-      </Stack.Navigator>
-    </NavigationContainer>
+        </Stack.Navigator>
+      </NavigationContainer>
+    </Provider>
+    
   );
 };
 

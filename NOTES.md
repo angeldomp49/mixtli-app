@@ -31,3 +31,20 @@ La aplicación se divide en:
 php para la autenticación y base de datos en el back-end
 javascript para la UI y sistema de front-end
 java para el reproductor de peliculas
+
+
+user:{
+    isLogged: true|false,
+    name: string,
+    email: example@makechtecnology.com,
+    history: [
+        {
+            titulo: 'example'
+        }
+    ],
+    role: usuario,
+    contactos: [
+        {telefono: 5555555555},
+        {facebook: angel}
+    ]
+}
